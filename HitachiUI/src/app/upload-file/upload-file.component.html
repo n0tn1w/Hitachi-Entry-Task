@@ -1,0 +1,52 @@
+<div class="card mt-5" style="width: 350px">
+  <div class="card-title text-center mb-0 mt-2">
+    <h2>Put data</h2>
+  </div>
+  <div class="card-body pt-1 text-center form-group">
+    <form *ngIf="!!formGroup"
+          [formGroup]="formGroup"
+          novalidate
+          (ngSubmit)="submit()">
+      <div class="row">
+        <div class="mt-2">
+          <input type="file"
+                 id="file"
+                 (change)="handleFileInput($event)">
+        </div>
+      </div>
+      <div class="row mt-2 form-group">
+        <label for="sender">Enter sender email</label>
+        <div class="position-relative has-icon-right mt-1">
+          <input type="text"
+                 id="sender"
+                 class="form-control"
+                 placeholder="Sender email"
+                 formControlName="sender">
+        </div>
+      </div>
+      <div class="row mt-2 form-group">
+        <label for="password">Enter sender password</label>
+        <div class="position-relative has-icon-right mt-1">
+          <input type="text"
+                 id="password"
+                 class="form-control"
+                 placeholder="Sender password"
+                 formControlName="password">
+        </div>
+      </div>
+      <div class="row mt-2 form-group">
+        <label for="receiver">Enter receiver password</label>
+        <div class="position-relative has-icon-right mt-1">
+          <input type="text"
+                 id="receiver"
+                 class="form-control"
+                 placeholder="Receiver email"
+                 formControlName="receiver">
+        </div>
+      </div>
+
+
+      <button class="btn btn-secondary hitachi-red mt-3" type="submit">Submit file</button>
+    </form>
+  </div>
+</div>

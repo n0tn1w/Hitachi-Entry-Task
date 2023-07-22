@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+.hitachi-red {
+  background-color: #800000;
+}
+
+
+.toast-top-right {
+  top: 1em;
+  right: 1em;
+}
+.toast-message {
+
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+
+  /*border-radius: 2px;*/
+  /*border: 2px solid black;*/
+
+}
+
+
+.toast-close::after {
+  content: '×'; /* Close button text */
+}
+
+
+.toast-container {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.toast-success {
+
+
+  background-color: #51A351; /* Customize background color */
+  color: #FFF; /* Customize text color */
+}
+
+.toast-error {
+  background-color: dimgray; /* Customize background color */
+  color: #FFF; /* Customize text color */
+}
+
+.toast-info {
+  background-color: #2F96B4; /* Customize background color */
+  color: #FFF; /* Customize text color */
+}
+
+.toast-warning {
+  background-color: #F89406; /* Customize background color */
+  color: #FFF; /* Customize text color */
+}
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
